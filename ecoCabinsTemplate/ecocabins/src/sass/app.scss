@@ -1,0 +1,13 @@
+// Importing Custom Bootstrap variables
+@import "component/custom_bootstrap_variables";
+
+// Importing boostrap scss
+@import "~bootstrap/scss/bootstrap";
+
+// Magnific Popup
+@import "../css/magnific-popup";
+
+// Custom Codes / modules
+@import "component/media-queries";
+@import "component/ec_global";
+@import "component/ec_codes";

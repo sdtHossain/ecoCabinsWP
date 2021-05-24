@@ -1,0 +1,37 @@
+$font-rebik: 'Rubik', sans-serif;
+$font-merriweather: 'Merriweather', serif;
+$font-family-base: $font-rebik;
+$body-color: #2A2A2A;
+
+$line-height-base: 1.2;
+$line-height-sm: 1;
+
+$h1-font-size: 2.25rem;
+$h2-font-size: 1.875rem;
+$h3-font-size: 1.125rem;
+
+$navbar-dark-color: #FFFFFF;
+
+$carousel-indicator-width: 8px;
+$carousel-indicator-height: 8px;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 832px
+) !default;
+
+$ec-gray: #606B74;
+$ec-light-gray: #646D70;
+
+$theme-colors: (
+        "primary": #222F33,
+);
+
+$custom-colors: (
+        "dark-green": #222F33,
+        "ec-gray": $ec-gray,
+        "ec-light-gray": $ec-light-gray
+);
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);

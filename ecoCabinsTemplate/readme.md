@@ -1,6 +1,10 @@
+===============================
+  Theme Setup Documentation
+===============================
+
 ecoCabins
-Digital Agency Services Wordpress Theme
------------------------------------------------------------------------------
+Digital Agency Services WordPress Theme
+----------------------------------------
 
 Created : 24/05/2021
 By : shahadat
@@ -8,49 +12,45 @@ Email : mshossain509@gmail.com
 
 Thank you for visiting ecoCabins theme!
 
-ecoCabins is a WordPress-based project which uses WordPress 5.7.2.
-I used underscores.me as a boilerplate with bootstrap 5. Has been set up Webpack 5.22.0 module bundler
-to bundle bootstrap sass, magnific popup, and theme own javascript and stylesheets.Used Rubik and Merriweather
-from google fonts as theme fonts and font-awesome for Icons. Please follow the guideline to setup the project
 
+Please follow the steps to setup ecoCabins theme
+---------------------------------------------------
+Step 1.  Download Project folder from https://github.com/sdtHossain/ecoCabinsWP.git
 
+Step 2.  Make .zip file of template folder named "ecocabins" from "ecoCabinsTemplate" folder
 
-Installation
----------------
+Step 3.  Setup a WordPress environment
 
-### Requirements
+Step 4.  Go to Appearance->Themes
 
-`ecoCabins` requires the following dependencies:
+Step 5.  Click Add New->Upload Theme->Choose File
 
-- [Node.js](https://nodejs.org/)
+Step 6.  Select ecocabins.zip file (you just zipped)
 
+Step 7.  Click Install Now
 
-### Setup
+Step 8.  Active the theme
 
-1. To start using all the tools that come with `ecoCabins`  you need to install the necessary Node.js dependencies:
+Step 9.  Go to theme directory named "ecocabins" in wp-content/themes
 
-```
-$ npm install
-```
+Step 10. Run command `npm install` in the terminal from the current directory to setup necessary dependencies of node
 
-If you don't have to edit anything you can skip Step 2, 3, 4.
+Step 11. Run `npm run build`
 
+Step 12. Back to WordPress Admin Panel
 
-2. Go to src/sass directory and open app.scss file to add style
+Step 13. Create 7 pages with named: Modellen, Kopen, Huren, NieUws, Button, Cookies, Privacybeleid by
+         ==> Pages->Add New
 
-3. Go to src/js directory and open app.js file to add js
+Step 14. Create two menus
+         ==> Appearance->Menus->Create a new menu->Menu Name->(**give a menu name**)->(**select your desired pages from left Add menu items table**)->check Display location->Save menu
 
-4. Run `npm run watch` and continue the development
+Step 15. Go to Appearance->Customize->Site Identity->Select logo->(**upload/select logo image**)->hit `Select` button in bottom right corner->Skip Cropping->Publish
 
-5. Run `npm run build`
+Step 16. Go to Appearance->Customize->Site Identity->Site title->write your title
 
-Project Ready!
+Step 17. Go to appearance->Customize->Site Identity->Tagline->Write your Tagline
 
+Step 18. Go to appearance->Customize->Site Identity->Site Icon->(**upload/select favicon icon image**)->hit `Select` button in bottom right corner->Skip Cropping->Publish
 
-
-### Available CLI commands
-
-`ecoCabins` comes packed with CLI commands tailored for WordPress theme development :
-
-- `npm run watch` : watches all SASS files and recompiles them to css when they change.
-- `npm run build` : generates sass, images and js files for distribution, excluding development and system files.
+You are done! Visit your site.

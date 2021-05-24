@@ -1,0 +1,316 @@
+// Header
+.site-header {
+
+  .eco-cabins-navbar {
+    padding-top: 34px;
+    padding-bottom: 34px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition:    all .3s ease-in-out;
+    -o-transition:      all .3s ease-in-out;
+    -ms-transition:     all .3s ease-in-out;
+    transition:         all .3s ease-in-out;
+    background: transparent;
+
+    @include d-sm {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    .last {
+      padding: 1px 17px;
+      background: #ffffff;
+      border-radius: .25rem;
+      border: 1px solid #dee2e6;
+      cursor: pointer;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition:    all .3s ease-in-out;
+      -o-transition:      all .3s ease-in-out;
+      -ms-transition:     all .3s ease-in-out;
+      transition:         all .3s ease-in-out;
+
+      &:hover {
+        background: transparent;
+
+        a.nav-link {
+          color: $white;
+        }
+      }
+
+      a.nav-link {
+        color: $ec-gray;
+        text-align: center;
+      }
+    }
+  }
+  .nav-item:not(:last-child) {
+    margin-right: 28px;
+  }
+  .nav-link {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+}
+
+// Hero Section
+.hero {
+  background-color: #606B74;
+  background-size: cover;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  padding-top: 185px;
+  padding-bottom: 224px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: -1;
+  }
+
+  @include d-sm {
+    padding-top: 140px;
+    padding-bottom: 130px;
+  }
+  &-content-left {
+    @include d-xs {
+      max-width: 90%;
+    }
+
+    h2 {
+      letter-spacing: 0.58px;
+      line-height: 1.33;
+    }
+  }
+
+  &-content-right {
+    padding-left: 87px;
+    padding-bottom: 9px;
+
+    @include d-sm {
+      padding-left: 0;
+      padding-top: 30px;
+    }
+
+    .icon-play-wrapper {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      background: #FFF;
+
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      -webkit-transition: all .5s;
+      -moz-transition: all .5s;
+      -ms-transition: all .5s;
+      -o-transition: all .5s;
+      transition: all .5s;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        background: #FFF;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-animation: pulse-border 1500ms ease-out infinite;
+        -moz-animation: pulse-border 1500ms ease-out infinite;
+        animation: pulse-border 1500ms ease-out infinite;
+      }
+
+      i {
+        font-size: 10px;
+        position: relative;
+        left: 1px;
+        top: -1px;
+      }
+    }
+    .watch-movie-text {
+      padding-left: 5px;
+      font-size: 12px;
+      line-height: 1.2;
+    }
+  }
+  .hero-social {
+    position: absolute;
+    right: -90px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 250px;
+
+    li:not(:last-child) {
+      margin-right: 36px;
+    }
+
+    a {
+      font-size: 10px;
+      line-height: 1.2;
+    }
+  }
+}
+
+//Intro
+.intro {
+  position: relative;
+
+  &-content-left {
+    padding-right: 42px;
+
+    @include d-md {
+      padding-right: 20px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: $intro-content-left-after-width;
+      height: 399px;
+      background: #ffffff;
+      left: 0;
+      top: -37px;
+
+      @include d-sm {
+        width: 91%;
+      }
+    }
+    h2 {
+      margin-bottom: 13px;
+      line-height: 1.3;
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.9;
+    }
+    .btn {
+      font-size: 12px;
+      line-height: 1.2;
+      padding: 9px 25px;
+    }
+  }
+  &-content-right {
+    max-width: 325px;
+    height: 366px;
+    margin-left: auto;
+    margin-right: 9px;
+    margin-top: -101px;
+
+    @include d-sm {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 30px;
+    }
+
+    .slider-img {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .colored-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: calc( 100% - #{$intro-content-left-after-width});
+    height: 137px;
+    z-index: -1;
+
+    @include d-sm {
+      width: 85%;
+    }
+  }
+}
+
+// Innovatie
+.about-us {
+  p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+// before footer
+.before-footer {
+
+  @include d-sm {
+    padding-bottom: 40px;
+  }
+  h3 {
+    line-height: 1.3;
+    margin-bottom: 6px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  &-left {
+    padding-right: 29px;
+
+
+    @include d-md {
+      padding-right: 0;
+    }
+    @include d-sm {
+      max-width: 340px;
+      margin-bottom: 30px;
+    }
+  }
+  &-right {
+    padding-left: 19px;
+
+    @include d-md {
+      padding-left: 0;
+    }
+
+    div[class*='col']:nth-child(even) .before-footer-widget {
+      padding-left: 17px;
+
+      @include d-md {
+        padding-left: 0;
+      }
+    }
+
+    &-widget {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// Footer
+.site-footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  p, a {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .footer-middle {
+    @include d-xs {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  .footer-right {
+    a:hover {
+      color: #FFFFFF;
+    }
+    .last {
+      margin-left: 23px;
+    }
+  }
+}
