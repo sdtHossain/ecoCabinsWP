@@ -3,9 +3,7 @@
 ===============================
 
 
-Project Name: ecoCabins
-
-
+Project Name: ecoCabins  
 Digital Agency Services Wordpress Theme
 -------------------------------------------
 
