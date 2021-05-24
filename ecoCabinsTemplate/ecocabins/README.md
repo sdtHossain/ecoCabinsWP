@@ -1,8 +1,8 @@
-===============================
+
   Theme Setup Documentation
 ===============================
 
-ecoCabins
+Theme Name: ecoCabins  
 Digital Agency Services WordPress Theme
 ----------------------------------------
 
